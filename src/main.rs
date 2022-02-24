@@ -18,7 +18,9 @@
 // mod ruststrings;
 // mod traits;
 // mod array_slices;
-mod hash_map;
+// mod hash_map;
+// mod options;
+mod results;
 // mod lifetimes;
 fn main() {
     // println!("Hello, world!");
@@ -48,8 +50,10 @@ fn main() {
     // ruststrings::run();
     // traits::run();
 //    array_slices::run();
-    hash_map::run();
+    // hash_map::run();
     // lifetimes::run();
+    // options::run();
+    results::run();
 
 
 }
