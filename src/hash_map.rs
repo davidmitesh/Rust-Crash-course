@@ -13,8 +13,15 @@ pub fn run(){
     get_map_values("ganesh", &map);
     let key = "himal";
     let value = "some dummy";
-    println!("{:?}",insert_new(key,& mut map,value));
+    let  result = insert_new(key,& mut map,value);
+    println!("{:?}",result);
     // println!("{:?}",map);
+
+    //to remove the key from the map
+    result.remove("mitesh");
+    println!("{:?}",result);
+
+
 }
 
 fn get_map_values(key : &str, mapping :  &HashMap<&str,&str>){

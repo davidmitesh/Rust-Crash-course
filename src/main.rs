@@ -18,8 +18,8 @@
 // mod ruststrings;
 // mod traits;
 // mod array_slices;
-// mod hash_map;
-mod lifetimes;
+mod hash_map;
+// mod lifetimes;
 fn main() {
     // println!("Hello, world!");
     // println!("{0} is from {1},and {1} is from {0}.","mitesh","ganesh");
@@ -48,8 +48,8 @@ fn main() {
     // ruststrings::run();
     // traits::run();
 //    array_slices::run();
-    // hash_map::run();
-    lifetimes::run();
+    hash_map::run();
+    // lifetimes::run();
 
 
 }
