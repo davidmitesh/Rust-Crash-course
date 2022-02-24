@@ -3,7 +3,7 @@
 // mod types;
 // mod string;
 // mod tuples;
-mod arrays;
+// mod arrays;
 // mod vectors;
 // mod conditionals;
 // mod loops;
@@ -17,6 +17,7 @@ mod arrays;
 // mod borrowing;
 // mod ruststrings;
 // mod traits;
+mod array_slices;
 fn main() {
     // println!("Hello, world!");
     // println!("{0} is from {1},and {1} is from {0}.","mitesh","ganesh");
@@ -30,7 +31,7 @@ fn main() {
     // types::run();
     // string::run();
     // tuples::run();
-    arrays::run();
+    // arrays::run();
     // vectors::run();
     // conditionals::run();
     // loops::run();
@@ -44,7 +45,7 @@ fn main() {
     // borrowing::run();
     // ruststrings::run();
     // traits::run();
-   
+   array_slices::run();
 
 
 }

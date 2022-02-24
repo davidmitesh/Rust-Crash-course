@@ -3,7 +3,7 @@
 use std::mem;
 pub fn run(){
     let mut numbers:[i32;5] = [1,2,3,4,5];//fixed size of number 5
-
+    let other_arr= [100;5];
     println!("{:?} ",numbers);
 
 
@@ -23,5 +23,6 @@ pub fn run(){
     let slice:&[i32] = &numbers[0..4];
 
     println!("Slice : {:?}",slice);
+    println!("The other array is :{:?}",other_arr);
 
 }
