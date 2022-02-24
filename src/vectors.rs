@@ -3,7 +3,7 @@
 
 use std::mem;
 pub fn run(){
-    let mut numbers: Vec<i32> = vec![1,2,3,4,5];//fixed size of number 5
+    let mut numbers: Vec<i32> = vec![1,2,3,4,5];//dynamic storage type
 
     println!("{:?} ",numbers);
 

@@ -17,7 +17,9 @@
 // mod borrowing;
 // mod ruststrings;
 // mod traits;
-mod array_slices;
+// mod array_slices;
+// mod hash_map;
+mod lifetimes;
 fn main() {
     // println!("Hello, world!");
     // println!("{0} is from {1},and {1} is from {0}.","mitesh","ganesh");
@@ -45,7 +47,9 @@ fn main() {
     // borrowing::run();
     // ruststrings::run();
     // traits::run();
-   array_slices::run();
+//    array_slices::run();
+    // hash_map::run();
+    lifetimes::run();
 
 
 }

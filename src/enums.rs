@@ -28,10 +28,10 @@
 
 
 enum WebEvent {
-    PageLoad,
-    PageUnload,
+    // PageLoad,
+    // PageUnload,
     KeyPress(char),
-    Paste(String),
+    // Paste(String),
     Click{x:i64,y:i64}
 }
 
@@ -40,11 +40,28 @@ enum Option<T>{
     None
 }
 
-fn main(){
+pub fn run(){
     let quit:WebEvent = WebEvent::KeyPress('q');
-    let click = WebEvent::Click{2,3};
+    let click = WebEvent::Click{x:2,y:3};
 
-    let something = Some(1);
+    let something = Some("mitesh");
+
+    //destructuring the enum values
+    if let WebEvent::KeyPress(b) = quit{
+        println!("{}",b);
+    }
+
+    //destructuring the enum values
+    if let WebEvent::Click{x,y} = click {
+        println!("The click coordinates are : {} and {}",x,y);
+    }
+
+    match something {
+        Some(x) => println!("{}",x),
+        _ => println!("Nothing really matters")
+    }
+
+
 }
 
  
